@@ -28,7 +28,7 @@ agregar_producto(lista_productos, id_, nombre, precio, cantidad)
 desear = input("¿Desea agregar algo más? (si/no): ").lower()
 
 while desear == "si":
-    id_ = input("Ingrese un id: ")  # Almacenar el ID como cadena
+    id_ = input("Ingrese un id: ")  
     nombre = input("Ingrese un nombre: ").lower()
     precio = int(input("Ingrese un precio: "))
     cantidad = int(input("Ingrese una cantidad: "))
@@ -65,7 +65,7 @@ if ordi=="si":
 def cambiar_nombre_producto(lista, id_producto, nuevo_nombre):
     producto_encontrado = False
     for producto in lista:
-        if producto["id"] == id_producto:  # Compara el ID como cadena
+        if producto["id"] == id_producto:  
             producto["nombre"] = nuevo_nombre
             producto_encontrado = True
             break
